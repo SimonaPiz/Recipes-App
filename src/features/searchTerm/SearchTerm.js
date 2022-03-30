@@ -3,6 +3,8 @@ const searchIconUrl = 'https://static-assets.codecademy.com/Courses/Learn-Redux/
 const clearIconUrl = 'https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/clear.svg'
 
 //import setSearchTerm and clearSearchTerm
+import { setSearchTerm } from './searchTermSlice';
+import { clearSearchTerm } from './searchTermSlice';
 
 export const SearchTerm = (props) => {
   const {searchTerm, dispatch} = props;
