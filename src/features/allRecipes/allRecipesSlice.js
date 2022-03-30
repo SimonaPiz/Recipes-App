@@ -1,6 +1,6 @@
 import allRecipesData from '../../../data';
 
-//action loadData
+//action loadData addRecipe removeRecipe
 export const loadData = () => {
   return {
     type: 'allRecipes/loadData',
