@@ -3,6 +3,7 @@ import FavoriteButton from '../../components/FavoriteButton';
 import Recipe from '../../components/Recipe';
 
 //import removeRecipe
+import { removeRecipe } from './favoriteRecipesSlice';
 
 const unfavoriteIconUrl = 'https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/unfavorite.svg'
 
