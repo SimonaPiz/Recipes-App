@@ -12,6 +12,7 @@ const favoriteIconURL = '../https://static-assets.codecademy.com/Courses/Learn-R
 
 export const AllRecipes = () => {
   const allRecipes = useSelector(selectFilteredAllRecipes);
+  const dispatch = useDispatch();
 
   const onFirstRender = () => {
     dispatch(loadData());
