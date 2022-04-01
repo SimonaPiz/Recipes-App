@@ -1,3 +1,4 @@
+import { selectSearchTerm } from '../searchTerm/searchTermSlice.js';
 //action removeRecipe addRecipe
 
 const initialState = [
