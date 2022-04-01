@@ -1,7 +1,5 @@
 //action setSearchTerm and clearSearchTerm
 
-import { SearchTerm } from "./SearchTerm";
-
 const initialState = '';
 
 export function setSearchTerm (input) {
@@ -27,3 +25,5 @@ export const searchTermReducer = (state= initialState, action) => {
       return state;
   };
 };
+
+export const selectSearchTerm = (state) => state.searchTerm;
