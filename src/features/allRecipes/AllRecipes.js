@@ -6,7 +6,7 @@ import FavoriteButton from '../../components/FavoriteButton';
 import { loadData } from './allRecipesSlice';
 import { addRecipe } from '../favoriteRecipes/favoriteRecipesSlice';
 
-const favoriteIconURL = 'https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/favorite.svg'
+const favoriteIconURL = '../https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/favorite.svg'
 
 export const AllRecipes = (props) => {
   const {allRecipes, dispatch} = props;
