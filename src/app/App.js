@@ -4,38 +4,19 @@ import { AllRecipes } from "../features/allRecipes/AllRecipes";
 import { FavoriteRecipes } from "../features/favoriteRecipes/FavoriteRecipes";
 import { SearchTerm } from "../features/searchTerm/SearchTerm";
 
-export function App(props) {
-  const {state, dispatch} = props;
-
-  function getFilteredRecipes(recipes, searchTerm) {
-    return recipes.filter(recipe => recipe.name.toLowerCase().includes(searchTerm.toLowerCase()));
-  }
-
-  const visibleAllRecipes = getFilteredRecipes(state.allRecipes, state.searchTerm);
-
-  const visibleFavoriteRecipes = getFilteredRecipes(state.favoriteRecipes, state.searchTerm);
-
+export function App() {
   return (
     <main>
       <section>
-        <SearchTerm 
-          searchTerm={state.searchTerm}
-          dispatch={dispatch}
-        />
+        <SearchTerm />
       </section>
       <section>
         <h2>Favorite Recipes</h2>
-        <FavoriteRecipes 
-          favoriteRecipes={visibleFavoriteRecipes}
-          dispatch={dispatch}
-        />
+        <FavoriteRecipes />
       </section>
       <section>
         <h2>All Recipes</h2>
-        <AllRecipes 
-          allRecipes={visibleAllRecipes}
-          dispatch={dispatch}
-        />
+        <AllRecipes />
       </section>
     </main>
   );
